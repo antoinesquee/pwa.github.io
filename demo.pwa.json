@@ -1,7 +1,10 @@
 {
-    "start_url": "./",
-    "name": "PWA",
+    "start_url": ".",
+    "name": "Gektacat",
+    "short_name": "gekta",
     "display": "standalone",
+    "background_color":"#fff",
+    "description":"A simple example of pwa app",
     "icons": [
       {
         "src": "./icon.png",
