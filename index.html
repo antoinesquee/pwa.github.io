@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PWA</title>
+    <style>
+        BODY {
+            background-color: #FB9902;
+            color: #342309;
+            font-size: xx-large;
+            margin: 0;
+        }
+
+        DIV {
+            align-content: center;
+            display: grid;
+            height: 100vh;
+            justify-content: center;
+        }
+    </style>
+    <link rel="manifest" href="demo.pwa.json">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div>App Shell</div>
 </body>
 </html>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        self.addEventListener("load", async () => {
+            const container = navigator.serviceWorker;
+            if (container.controller === null) {
+                const reg = await container.register("sw.js");
+            }
+        });
+    }
+</script>
