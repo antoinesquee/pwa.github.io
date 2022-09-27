@@ -1,7 +1,7 @@
 {
     "start_url": ".",
-    "name": "Gektacat",
-    "short_name": "gekta",
+    "name": "Tony's",
+    "short_name": "Tony",
     "display": "standalone",
     "background_color":"#fff",
     "description":"A simple example of pwa app",
