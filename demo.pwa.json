@@ -1,10 +1,10 @@
 {
     "start_url": ".",
     "name": "Tony's",
-    "short_name": "Tony",
+    "short_name": "Tony's business card",
     "display": "standalone",
-    "background_color":"#fff",
-    "description":"A simple example of pwa app",
+    "background_color":"#fff1e5",
+    "description":"My bisness site card",
     "icons": [
       {
         "src": "./icon.png",

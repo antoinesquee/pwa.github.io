@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Style CSS-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    
+
+    <link rel="manifest" href="demo.pwa.json">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="css/materialize.css">
+     
+     <title>Tony's</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="hide-on-med-and-down">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="main"> 
+  <h1>App Shell</h1>
+  <a class="waves-effect waves-light btn" href="./main.html">Main</a>
+</div>
+</body>
+</html>
+
+<script>
+  if ("serviceWorker" in navigator) {
+      self.addEventListener("load", async () => {
+          const container = navigator.serviceWorker;
+          if (container.controller === null) {
+              const reg = await container.register("sw.js");
+          }
+      });
+  }
+</script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/materialize.min.js"></script>
