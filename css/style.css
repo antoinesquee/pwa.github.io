@@ -25,6 +25,22 @@ color: black !important;
     justify-content: center;
 }
 
+.round {
+  width: 20vh;
+  height: 20vh;
+  display: grid;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 850px) {
  nav {
   bottom: 0;
