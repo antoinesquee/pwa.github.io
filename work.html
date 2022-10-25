@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Style CSS-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    
+
+    <link rel="manifest" href="demo.pwa.json">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="css/materialize.css">
+     
+     <title>Tony's</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="hide-on-med-and-down">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="work"> 
+    <h3>Open mobile platform</h3>  
+    <ul>
+      <li>Lead Pre-sales engineer</li>
+      <p class="job">Linux administrator
+        Organization pilot projects
+        Technical support pilot projects
+        Post sale technical support
+        Public presentation
+        Development of technical documentation
+        Analysis of customer specifications
+        Development of technical solutions and selection of equipment for the customer's technical specifications
+        Develop and support company websites (Jekyll, HTML, CSS, JS)
+        Creating video content</p>
+      <li>Pre-sales engineer</li>
+      <p class="job">Linux administrator
+        Organization pilot projects
+        Technical support pilot projects
+        Post sale technical support
+        Public presentation
+        Development of technical documentation
+        Analysis of customer specifications
+        Development of technical solutions and selection of equipment for the customer's technical specifications
+        Develop and support company websites (Jekyll, HTML, CSS, JS)
+        Creating video content</p>
+      <li>Junior Pre-sales engineer</li>
+      <p class="job">Linux administrator
+        Organization pilot projects
+        Technical support pilot projects
+        Post sale technical support
+        Public presentation
+        Development of technical documentation
+        Analysis of customer specifications
+        Development of technical solutions and selection of equipment for the customer's technical specifications
+        Develop and support company websites (Jekyll, HTML, CSS, JS)
+        Creating video content</p>
+    </ul>
+    <h3>Symanitron</h3>
+    <ul>
+      <li>
+        Project engineer
+      </li>
+      <p class="job">Development of technical documentation.
+        Analysis of customer specifications.
+        Development of technical solutions and selection of equipment for the customer's technical specifications.
+        Software configuration, support for company websites (HTML, CSS).
+        Python scripting for projects.</p>
+    </ul>
+  
+</div>
+</body>
+</html>
+
+<script>
+  if ("serviceWorker" in navigator) {
+      self.addEventListener("load", async () => {
+          const container = navigator.serviceWorker;
+          if (container.controller === null) {
+              const reg = await container.register("sw.js");
+          }
+      });
+  }
+</script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/materialize.min.js"></script>
