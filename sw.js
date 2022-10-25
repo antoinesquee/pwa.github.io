@@ -10,7 +10,6 @@ function hndlEventInstall(evt) {
             './',
             './demo.pwa.json',
             './icon.png',
-            './index.html',
             './sw.js',
         ];
         const cacheStat = await caches.open(CACHE_STATIC);
