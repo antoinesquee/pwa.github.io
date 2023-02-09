@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--Favicon-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--Style CSS-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
-    
 
-    <link rel="manifest" href="demo.pwa.json">
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="css/materialize.css">
-     
-     <title>Tony's</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Style CSS-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+
+  <link rel="manifest" href="demo.pwa.json">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.css">
+
+  <title>Tony's</title>
 </head>
 
 <body>
-      <div class="navbar-fixed">
+  <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
         <ul class="hide-on-med-and-down">
@@ -33,22 +33,30 @@
       </div>
     </nav>
   </div>
-<div class="main"> 
+  <div class="main">
     <h1>App Shell</h1>
     <a class="waves-effect waves-light btn" href="index.html">Main</a>
-</div>
-</body>
-</html>
+  </div>
 
-<script>
+  <div class="about">
+    <p>2022 - <span id="year"></span> ©</p>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </div>
+
+  <script>
     if ("serviceWorker" in navigator) {
-        self.addEventListener("load", async () => {
-            const container = navigator.serviceWorker;
-            if (container.controller === null) {
-                const reg = await container.register("sw.js");
-            }
-        });
+      self.addEventListener("load", async () => {
+        const container = navigator.serviceWorker;
+        if (container.controller === null) {
+          const reg = await container.register("sw.js");
+        }
+      });
     }
-</script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="js/materialize.min.js"></script>
+  </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/materialize.min.js"></script>
+</body>
+
+</html>
